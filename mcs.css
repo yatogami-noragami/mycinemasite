@@ -1,0 +1,244 @@
+body {
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.backgroundColor {
+    background-color: #0A1D3D;
+}
+
+.foreColor {
+    background-color: #E9EBEE;
+}
+
+.accentColor {
+    color: #D81E05;
+}
+
+.secondaryAccentColor {
+    color: #F8B500;
+}
+
+nav {
+    z-index: 99;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #F8B500;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link:hover::before {
+    transition: all 300ms ease-in-out;
+    width: 100%;
+}
+
+.nav-link.active:hover::before {
+    width: 0;
+}
+
+#searchBox {
+    color: #D81E05;
+}
+
+.poster {
+    cursor: pointer;
+    position: relative;
+}
+
+.posterInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+}
+
+.posterImage {
+    height: 500px;
+}
+
+.hallChoose {
+    width: 300px;
+    height: 300px;
+}
+
+#seatNumber {
+    letter-spacing: 5px;
+}
+
+.btn-pink {
+    background-color: palevioletred;
+}
+
+.btn-pink:hover {
+    background-color: pink
+}
+
+.payment {
+    color: white;
+}
+
+.payment:hover {
+    transition: all 300ms ease-in-out;
+    color: #F8B500;
+}
+
+#bttBtn {
+    position: fixed;
+    top: 60%;
+    right: 5%;
+}
+
+#bttBtn i {
+    color: white;
+}
+
+@keyframes bttAnimation {
+    from {
+        color: white;
+        text-shadow: none;
+    }
+
+    to {
+        color: #F8B500;
+        text-shadow: 0 0 3px #fff,
+            0 0 3px #fff,
+            0 0 20px #F8B500,
+            0 0 30px #F8B500,
+            0 0 40px #F8B500;
+        ;
+    }
+}
+
+#navTabs {
+    position: fixed;
+    top: 3%;
+    left: 0;
+    width: 20%;
+}
+
+#navTabsInfo {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 80%;
+}
+
+.navTabsImage {
+    transition: all 300ms ease-in-out;
+}
+
+.reviewImage {
+    height: 400px;
+}
+
+#footerReview {
+    width: 100%;
+}
+
+.offerImage {
+    height: 500px;
+}
+
+.floating-element {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: floatingAnimation 5s infinite linear;
+}
+
+@keyframes floatingAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .posterInfo {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        opacity: 1;
+    }
+
+    .poster:hover .posterInfo {
+        transition: all 600ms ease-in-out;
+        top: 0;
+        opacity: 1;
+    }
+
+    #bttBtn:hover i {
+        animation: bttAnimation 300ms linear infinite;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .hallChoose {
+        height: 100px;
+    }
+
+    #seatChooseParent button {
+        flex-basis: 5%;
+        max-width: 5%;
+        margin: 3%;
+        font-size: 6px;
+        text-align: center !important;
+    }
+
+    #navTabsMobile {
+        position: fixed;
+        top: 5%;
+        left: 0;
+        width: 100%;
+    }
+
+    #navTabsInfo {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 100%;
+    }
+
+    .reviewImage {
+        height: 200px;
+    }
+
+    .offerImage {
+        height: 200px;
+    }
+}

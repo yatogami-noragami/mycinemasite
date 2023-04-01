@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="mcs.css">
+
+    <title>My Cinema Site</title>
+</head>
+
+<body class=" backgroundColor">
+
+    <!-- Floating Element -->
+    <button class="btn rounded-circle accentColor fs-1 floating-element">
+        <i class="fa-solid fa-video"></i>
+    </button>
+
+    <div class="container p-5">
+        <div class="row">
+            <div
+                class="col-lg-4 offset-lg-4 col-md-8 offset-md-2 border border-secondary rounded p-lg-5 position-relative">
+                <h1 class=" accentColor text-center">
+                    <i class="fa-solid fa-video"></i>
+                </h1>
+                <h3 class=" accentColor fw-bold text-center ">My Cinema Site</h3>
+
+                <form action="" class="mt-5">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control fw-bold" id="email" placeholder="Email Address">
+                        <label for="email">Email address</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control fw-bold" id="password" placeholder="Password">
+                        <label for="password">Password</label>
+                    </div>
+
+                    <button class="btn d-flex" type="button" id="pswShowHide">
+                        <i class="fa-solid fa-eye text-light me-3 mt-1" id="eye"></i>
+                        <p class=" text-light" id="eyeLabel">
+                            show password
+                        </p>
+                    </button>
+
+                    <div class="row">
+                        <a href="mcsRegister.html" class=" secondaryAccentColor fw-bold fs-5">Register</a>
+                    </div>
+
+                    <a href="#!" type="submit" class="btn btn-outline-warning form-control my-5">Login</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Bootstrap CDN -->
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+
+<!-- Local Js -->
+<script src="mcs.js"></script>
+
+
+</html>
