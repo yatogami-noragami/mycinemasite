@@ -27,4 +27,4 @@
 <img src="./image/readme80.png">
 
 <h3>Spoiler free reviews</h3>
-<img src="./image/readme9.png">
+<img src="./image/readme90.png">
