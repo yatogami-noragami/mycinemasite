@@ -24,7 +24,7 @@
 <img src="./image/readme7.png">
 
 <h3>About Us</h3>
-<img src="./image/readme8.png">
+<img src="./image/readme80.png">
 
 <h3>Spoiler free reviews</h3>
 <img src="./image/readme9.png">
